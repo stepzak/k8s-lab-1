@@ -14,11 +14,8 @@ spec:
           command: [
             "sh", 
             "-c", 
-            "until nc -z -v -w3 $$DB_HOST 5432; do echo 'Waiting for Postgres...'; sleep 2; done"
+            "until nc -z -v -w3 postgres-dev 5432; do echo 'Waiting for Postgres...'; sleep 2; done"
           ]
-          env:
-            - name: DB_HOST
-              value: postgres
       containers:
         - name: migrate-messages
           image: ghcr.io/kukymbr/goose-docker:latest
