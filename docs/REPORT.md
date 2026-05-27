@@ -20,3 +20,4 @@
 2. [prod](../argocd/argocd-app-prod.yaml) (включен Prune + SelfHeal)
 
 ![Argo CD](argocd.png)
+![App example](app.png)
