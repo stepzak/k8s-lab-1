@@ -18,5 +18,5 @@
 
 ```kubectl port-forward -n messager-dev svc/frontend-dev 3000:80```
 
-Приложение будет доступно по адресу http://localhost:8080
+Приложение будет доступно по адресу http://localhost:3000
 ![App example](docs/app.png)
